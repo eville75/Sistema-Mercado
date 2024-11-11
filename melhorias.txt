@@ -1,0 +1,13 @@
+no cod produto é preciso verificar a especificação do dado inserido 
+                nao existe um else para repostas erradas, ele so volta ao menu
+                verificar o input "tipo de produto"
+                o cod do produto esta em str 
+                
+                ao remover o produto, nao tem a pergunta de confirmação
+
+cod venda esta todo bugado, funcionalidades não funcionam, e nao esta como requisitado
+
+cod relatório nao funciona, pede uma data em calendario, sendo que no cadastro solicita em dias
+                opcao 2 nem sequer retorna algo
+
+cod caixa aparentemente funcionando, verificar mais
