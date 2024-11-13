@@ -1,3 +1,4 @@
+PRIMEIRA COMMIT:
 no cod produto é preciso verificar a especificação do dado inserido 
                 nao existe um else para repostas erradas, ele so volta ao menu
                 verificar o input "tipo de produto"
@@ -11,3 +12,16 @@ cod relatório nao funciona, pede uma data em calendario, sendo que no cadastro 
                 opcao 2 nem sequer retorna algo
 
 cod caixa aparentemente funcionando, verificar mais
+
+
+SEGUNDA COMMIT:
+cod produto colocar numero quando for escolher o tipo do produto (ex.: 2. utensílio - e o usuario coloca apenas o numero 2)
+            criar a opção 0 para retornar ao menu principal em todos os menus
+            falta a opção de editar dados dos produtos depois de cadastrados
+
+cod caixa nao tem else de erro na abertura do caixa, e nem no fechamento
+
+cod venda nao possui else para valores invalidos
+            na hora da nova compra, começa a não reconhecer o codigo do produto, reconhece só alguns e nao da retorno de nada, apenas retorna o input
+
+cod relatorio nao funciona a opção "2. Realatorio de estoque baixo"

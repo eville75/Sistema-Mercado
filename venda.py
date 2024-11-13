@@ -15,11 +15,10 @@ class GerenciamentoVenda:
             if produto:
                 quantidade = input("Quantidade: ")
                 if not quantidade.isdigit() or int(quantidade) > produto.quantidade:
-                    print("Quantidade inválida ou maior que o disponível em estoque.")
+                    print("** Quantidade inválida ou maior que o disponível em estoque. **")
                     continue
                 quantidade = int(quantidade)
 
-                # Agrupamento de produtos
                 if codigo in carrinho:
                     carrinho[codigo]['quantidade'] += quantidade
                 else:
@@ -28,6 +27,8 @@ class GerenciamentoVenda:
                 subtotal = produto.valor * quantidade
                 total += subtotal
                 print(f"Adicionado: {produto.nome} x{quantidade} - Subtotal: R${subtotal}")
+            else:
+                print("** Produto não encontrado! **")
 
         print("\nResumo da venda:")
         for item in carrinho.values():
@@ -38,7 +39,6 @@ class GerenciamentoVenda:
 
         print(f"Total da compra: R${total}")
 
-        # Confirmar finalização
         confirmacao = input("Finalizar compra? (s/n): ")
         if confirmacao.lower() == 's':
             for item in carrinho.values():
