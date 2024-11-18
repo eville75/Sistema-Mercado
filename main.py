@@ -6,7 +6,7 @@ from relatorio import GeracaoRelatorio
 def iniciar_sistema():
     caixa = Caixa()
     produtos = GerenciamentoProduto()
-    vendas = GerenciamentoVenda(produtos)
+    vendas = GerenciamentoVenda(produtos, caixa)  # Passar o caixa para GerenciamentoVenda
     relatorios = GeracaoRelatorio(produtos)
 
     caixa.abrir_caixa()
