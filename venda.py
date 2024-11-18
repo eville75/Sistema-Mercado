@@ -37,16 +37,16 @@ class GerenciamentoVenda:
 
         # Gerar nota fiscal
         print("\nNota Fiscal:")
-        print(f"{'Produto':<20}{'Quantidade':<10}{'Subtotal':<10}")
-        print("-" * 40)
+        print(f"{'Produto':<20}{'Quantidade':<20}{'Subtotal':<10}")
+        print("-" * 55)
 
         for item in sorted(carrinho.values(), key=lambda x: x['produto'].nome):
             produto = item['produto']
             quantidade = item['quantidade']
             subtotal = produto.valor * quantidade
-            print(f"{produto.nome:<20}{quantidade:<10}{subtotal:<10.2f}")
+            print(f"{produto.nome:<20}{quantidade:<20}{subtotal:<10.2f}")
 
-        print("-" * 40)
+        print("-" * 55)
         print(f"Total da compra: R${total:.2f}")
 
         confirmacao = input("Finalizar compra? (s/n): ")

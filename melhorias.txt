@@ -46,3 +46,5 @@ QUARTA COMMIT
 no cod venda ao finalizar a compra não é emitido a "nota fiscal" com todos os produtos comprados e o valor final
                 corrigir erro do nao agrupamento de produtos passado fora de ordem
                 não está atualizando o valor do caixa
+
+QUINTA COMMIT 
