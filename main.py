@@ -25,7 +25,8 @@ def iniciar_sistema():
         elif opcao == "3":
             relatorios.menu_relatórios()
         elif opcao == "4":
-            caixa.fechar_caixa()
+            if caixa.fechar_caixa() is False:
+                continue  # Volta ao menu principal se o fechamento falhar
             break
         else:
             print("Opção inválida. Tente novamente.")

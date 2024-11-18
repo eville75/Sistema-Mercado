@@ -17,4 +17,5 @@ class Caixa:
         if self.valor_total > 0:
             print(f"Caixa fechado com valor final de R${self.valor_total}")
         else:
-            print("** Erro ao fechar o caixa. **")
+            print("** Erro ao fechar o caixa. Voltando ao menu principal. **")
+            return False  # Retorna um indicador de que o fechamento falhou

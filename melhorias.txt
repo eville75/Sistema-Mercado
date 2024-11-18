@@ -25,3 +25,19 @@ cod venda nao possui else para valores invalidos
             na hora da nova compra, começa a não reconhecer o codigo do produto, reconhece só alguns e nao da retorno de nada, apenas retorna o input
 
 cod relatorio nao funciona a opção "2. Realatorio de estoque baixo"
+
+
+TERCEIRA COMMIT
+no cod caixa nao retornava o menu principal quando dava erro ao fechar o caixa (fazer alteração no "caixa" e no "main")
+no cod produto corrigir o termo de garantia em dias
+        corrigir validade de produtos para dias
+        nao reconhece produto com codigo repetido
+
+FALTA -> no cod venda ao finalizar a compra não é emitido a "nota fiscal" com todos os produtos comprados e o valor final
+                corrigir erro do nao agrupamento de produtos passado fora de ordem
+                não está atualizando o valor do caixa
+                ao inserir codigo do produto, as vezes nao acontece nada e retorna o input para voce inserir novamente
+
+no cod relatorio nao informava a quantidade minima de produtos ao exibir o relatorio
+        empregar a logica dos relatorios iguais
+

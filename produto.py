@@ -46,7 +46,7 @@ class GerenciamentoProduto:
                 return
             produto = Produto(codigo, nome, valor, validade=validade, quantidade=quantidade)
         else:  # Utensílio ou Eletro
-            garantia = input("Termo de garantia: ")
+            garantia = input("Termo de garantia (em dias): ")
             produto = Produto(codigo, nome, valor, garantia=garantia, quantidade=quantidade)
 
         self.produtos.append(produto)

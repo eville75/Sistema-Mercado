@@ -17,6 +17,7 @@ class GeracaoRelatorio:
                 print(f"{produto.nome} - Validade: {produto.validade} dias")
 
     def relatorio_estoque(self):
+        print("Aqui estão os produtos com estoque igual ou menor que 15.")
         for produto in self.gerenciamento_produto.produtos:
             if produto.quantidade <= 15:
                 print(f"{produto.nome} - Estoque baixo: {produto.quantidade} unidades")
