@@ -48,3 +48,13 @@ no cod venda ao finalizar a compra não é emitido a "nota fiscal" com todos os 
                 não está atualizando o valor do caixa
 
 QUINTA COMMIT 
+emissão de relatorio com o mesmo sistema: input para saber qual a quantidade exata de produtos ou validade para emitir o relatorio
+
+
+SEXTA COMMIT
+corrigindo o nao reconhecimento automatico dos codigos na hora da compra
+
+
+COMMIT FINAL
+implementando melhorias vizuais
+

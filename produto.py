@@ -7,6 +7,7 @@ class Produto:
         self.garantia = garantia
         self.quantidade = quantidade
 
+
 class GerenciamentoProduto:
     def __init__(self):
         self.produtos = []
@@ -15,12 +16,12 @@ class GerenciamentoProduto:
         print("----------------------------\nTipo de produto:")
         print("1. Alimentício\n2. Utensílio\n3. Eletro")
         tipo = input("Escolha o tipo de produto (número): ")
-        
+
         tipos_validos = {"1": "alimentício", "2": "utensílio", "3": "eletro"}
         if tipo not in tipos_validos:
             print("** Tipo inválido! Tente novamente. **")
             return
-        
+
         codigo = input("Código do produto (numérico): ")
         if not codigo.isdigit():
             print("** Código inválido! Digite um número. Reinicie a operação. **")
@@ -32,7 +33,7 @@ class GerenciamentoProduto:
             print("** Valor inválido! Digite um número. **")
             return
         valor = float(valor)
-        
+
         quantidade = input("Quantidade em estoque: ")
         if not quantidade.isdigit():
             print("** Quantidade inválida! Digite um número. **")
@@ -75,12 +76,16 @@ class GerenciamentoProduto:
             else:
                 print(">> Remoção cancelada. <<")
 
-    def buscar_produto(self):
-        termo = input("----------------------------\nDigite o código ou nome do produto: ").lower()
+    def buscar_produto(self, termo=None):
+        if termo is None:  # Permitir que um código seja passado diretamente
+            termo = input("----------------------------\nDigite o código ou nome do produto: ").strip().lower()
+
         for produto in self.produtos:
-            if termo in produto.nome.lower() or termo == produto.codigo:
-                print(f">> Produto encontrado: {produto.nome}, Estoque: {produto.quantidade}, Valor: {produto.valor}. <<")
+            # Comparar código como string e realizar busca case-insensitive no nome
+            if termo == str(produto.codigo) or termo in produto.nome.lower():
+                print(f">> Produto encontrado: {produto.nome}, Estoque: {produto.quantidade}, Valor: {produto.valor:.2f}. <<")
                 return produto
+
         print(">> Produto não encontrado. <<")
         return None
 

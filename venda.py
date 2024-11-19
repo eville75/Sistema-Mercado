@@ -8,13 +8,13 @@ class GerenciamentoVenda:
         carrinho = {}
 
         while True:
-            codigo = input("Digite o código do produto (ou '0' para finalizar): ")
+            codigo = input("Digite o código do produto (ou '0' para finalizar): ").strip()
             if codigo == "0":
                 break
 
-            produto = self.gerenciamento_produto.buscar_produto()
+            produto = self.gerenciamento_produto.buscar_produto(codigo)  # Passa o código diretamente
             if produto:
-                quantidade = input("Quantidade: ")
+                quantidade = input("Quantidade: ").strip()
                 if not quantidade.isdigit() or int(quantidade) > produto.quantidade:
                     print("** Quantidade inválida ou maior que o disponível em estoque. **")
                     continue
@@ -49,8 +49,8 @@ class GerenciamentoVenda:
         print("-" * 55)
         print(f"Total da compra: R${total:.2f}")
 
-        confirmacao = input("Finalizar compra? (s/n): ")
-        if confirmacao.lower() == 's':
+        confirmacao = input("Finalizar compra? (s/n): ").strip().lower()
+        if confirmacao == 's':
             for item in carrinho.values():
                 produto = item['produto']
                 produto.quantidade -= item['quantidade']  # Atualizar estoque do produto
