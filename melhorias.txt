@@ -53,8 +53,8 @@ emissão de relatorio com o mesmo sistema: input para saber qual a quantidade ex
 
 SEXTA COMMIT
 corrigindo o nao reconhecimento automatico dos codigos na hora da compra
+adicionando questionamento para fechamento de caixa
 
-
-COMMIT FINAL
-implementando melhorias vizuais
-
+SETIMA COMMIT
+implementar ajustes vizuais 
+portugues para english
