@@ -12,7 +12,7 @@ def start_system():
     cash_register.open_cash_register()
     while True:
         print("--------------------------------------------\nMenu Principal:")
-        print("1. Cadastro de Produtos")
+        print("1. Gerenciar Produtos")
         print("2. Nova Venda")
         print("3. Relatórios")
         print("4. Fechar Caixa")
